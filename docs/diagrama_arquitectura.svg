@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 940" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1326"/>
+      <stop offset="1" stop-color="#070b16"/>
+    </linearGradient>
+    <radialGradient id="glowbg" cx="50%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#16213f" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0c1326" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gData" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7b6cf0"/><stop offset="1" stop-color="#5a3fd6"/></linearGradient>
+    <linearGradient id="gCal"  x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1fd1a3"/><stop offset="1" stop-color="#0e9e87"/></linearGradient>
+    <linearGradient id="gModel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4aa3ff"/><stop offset="1" stop-color="#2d6ff0"/></linearGradient>
+    <linearGradient id="gMC"   x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7b733"/><stop offset="1" stop-color="#e2722b"/></linearGradient>
+    <linearGradient id="gOut"  x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2ee6a8"/><stop offset="1" stop-color="#16b07d"/></linearGradient>
+    <linearGradient id="gold"  x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe08a"/><stop offset="0.5" stop-color="#f4c430"/><stop offset="1" stop-color="#e8a317"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="titleGlow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7f8db0"/></marker>
+    <marker id="arrG" markerWidth="13" markerHeight="13" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#f4c430"/></marker>
+    <style>
+      .ct{fill:#fff;font-weight:700;font-size:15px}
+      .it{fill:#eef2f9;font-weight:600;font-size:12.5px}
+      .ds{fill:#94a0b8;font-size:10px}
+      .mono{font-family:'Consolas','SF Mono',monospace}
+      .kpiN{fill:#fff;font-weight:800;font-size:22px}
+      .kpiL{fill:#aeb8cf;font-size:10.5px;font-weight:600;letter-spacing:.5px}
+    </style>
+  </defs>
+
+  <rect width="1500" height="940" fill="url(#bg)"/>
+  <rect width="1500" height="940" fill="url(#glowbg)"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="750" y="56" text-anchor="middle" class="" fill="url(#gold)" font-size="36" font-weight="800" filter="url(#titleGlow)">PREDICTOR MONTE CARLO &#8212; MUNDIAL 2026</text>
+  <text x="750" y="86" text-anchor="middle" fill="#c5cee0" font-size="14.5">Elo observado &#8226; altitud &#183; desgaste &#183; presi&#243;n &#183; estilo &#8594; goles Poisson &#215; Dixon&#8211;Coles &#8594; <tspan fill="#f4c430" font-weight="700">10.000 simulaciones acumulativas por ronda</tspan></text>
+
+  <!-- ===== KPI STRIP ===== -->
+  <g font-family="'Segoe UI',Arial">
+    <g transform="translate(70,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN">48</text><text x="60" y="22" class="kpiL">SELECCIONES</text><text x="60" y="38" class="kpiL">12 grupos &#183; 16 sedes</text></g>
+    <g transform="translate(410,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#f4c430">10K</text><text x="78" y="22" class="kpiL">SIMULACIONES</text><text x="78" y="38" class="kpiL">en CADA ronda de partidos</text></g>
+    <g transform="translate(750,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#2ee6a8">5</text><text x="52" y="22" class="kpiL">MUNDIALES</text><text x="52" y="38" class="kpiL">calibraci&#243;n (80 cruces reales)</text></g>
+    <g transform="translate(1090,108)"><rect width="340" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#7b6cf0">&#8635;</text><text x="56" y="22" class="kpiL">ACUMULATIVO</text><text x="56" y="38" class="kpiL">el Elo se reajusta con cada resultado</text></g>
+  </g>
+
+  <!-- ===== PIPELINE CARDS ===== -->
+  <!-- Card 1: FUENTES DE DATOS -->
+  <g filter="url(#shadow)">
+    <rect x="40" y="180" width="290" height="330" rx="14" fill="#0f1830" stroke="#26314d"/>
+    <path d="M40,194 a14,14 0 0 1 14,-14 h262 a14,14 0 0 1 14,14 v24 h-290 z" fill="url(#gData)"/>
+    <text x="185" y="203" text-anchor="middle" class="ct">FUENTES DE DATOS</text>
+  </g>
+  <g transform="translate(58,238)">
+    <circle cx="2" cy="-4" r="3" fill="#7b6cf0"/><text x="14" y="0" class="it">Elo &#8212; eloratings.net</text><text x="14" y="15" class="ds">fuerza base por selecci&#243;n</text>
+    <circle cx="2" cy="36" r="3" fill="#7b6cf0"/><text x="14" y="40" class="it">Ranking FIFA</text><text x="14" y="55" class="ds">referencia cuantitativa</text>
+    <circle cx="2" cy="76" r="3" fill="#7b6cf0"/><text x="14" y="80" class="it">Transfermarkt</text><text x="14" y="95" class="ds">valores + 5 jugadores (+ golero)</text>
+    <circle cx="2" cy="116" r="3" fill="#7b6cf0"/><text x="14" y="120" class="it">Sedes + altitud</text><text x="14" y="135" class="ds">CDMX 2240 m &#183; Guadalajara 1566 m</text>
+    <circle cx="2" cy="156" r="3" fill="#7b6cf0"/><text x="14" y="160" class="it">Estilos de juego</text><text x="14" y="175" class="ds">posesi&#243;n &#183; ritmo &#183; ofensivo/def.</text>
+    <circle cx="2" cy="196" r="3" fill="#7b6cf0"/><text x="14" y="200" class="it">Hist&#243;rico 5 Mundiales</text><text x="14" y="215" class="ds">marcadores + Elo pre-torneo</text>
+    <circle cx="2" cy="236" r="3" fill="#7b6cf0"/><text x="14" y="240" class="it">Fixture oficial</text><text x="14" y="255" class="ds">sorteo dic-2025 &#183; 72 partidos</text>
+  </g>
+
+  <!-- Card 2: CALIBRACION -->
+  <g filter="url(#shadow)">
+    <rect x="358" y="180" width="232" height="330" rx="14" fill="#0f1830" stroke="#26314d"/>
+    <path d="M358,194 a14,14 0 0 1 14,-14 h204 a14,14 0 0 1 14,14 v24 h-232 z" fill="url(#gCal)"/>
+    <text x="474" y="203" text-anchor="middle" class="ct">CALIBRACI&#211;N</text>
+  </g>
+  <g transform="translate(376,242)">
+    <text x="0" y="0" class="it">&#205;ndice &#8594; Elo base</text>
+    <text x="0" y="34" class="it">Backtest MLE</text><text x="0" y="49" class="ds">5 Mundiales &#183; 80 cruces reales</text>
+    <line x1="0" y1="66" x2="196" y2="66" stroke="#26314d"/>
+    <text x="0" y="88" class="ds">par&#225;metros calibrados con datos:</text>
+    <text x="0" y="112" class="it mono" fill="#2ee6a8">ELO_DIV  = 250</text>
+    <text x="0" y="134" class="it mono" fill="#2ee6a8">KO_FACTOR = 0.87</text>
+    <text x="0" y="156" class="it mono" fill="#2ee6a8">DC_RHO   = -0.10</text>
+    <line x1="0" y1="174" x2="196" y2="174" stroke="#26314d"/>
+    <text x="0" y="198" class="ds">El favorito por Elo gana el</text>
+    <text x="0" y="216" class="it" fill="#f4c430">70% de los cruces de KO</text>
+    <text x="0" y="231" class="ds">(30% son sorpresas reales)</text>
+  </g>
+
+  <!-- Card 3: MODELO DE PARTIDO -->
+  <g filter="url(#shadow)">
+    <rect x="618" y="180" width="300" height="330" rx="14" fill="#0f1830" stroke="#26314d"/>
+    <path d="M618,194 a14,14 0 0 1 14,-14 h272 a14,14 0 0 1 14,14 v24 h-300 z" fill="url(#gModel)"/>
+    <text x="768" y="203" text-anchor="middle" class="ct">MODELO DE PARTIDO</text>
+  </g>
+  <g transform="translate(636,240)">
+    <text x="0" y="0" class="it">Elo efectivo =</text>
+    <text x="14" y="22" class="ds">Elo base</text>
+    <text x="14" y="42" class="ds"><tspan fill="#2ee6a8">+</tspan> localia (anfitri&#243;n MEX/USA/CAN)</text>
+    <text x="14" y="62" class="ds"><tspan fill="#ff6b6b">&#8211;</tspan> altitud (rivales no adaptados)</text>
+    <text x="14" y="82" class="ds"><tspan fill="#ff6b6b">&#8211;</tspan> desgaste (fatiga acumulada)</text>
+    <text x="14" y="102" class="ds"><tspan fill="#2ee6a8">+</tspan> presi&#243;n (&#8220;ganar o nada&#8221;)</text>
+    <line x1="0" y1="118" x2="264" y2="118" stroke="#26314d"/>
+    <text x="0" y="142" class="it">&#9917; estilo &#8594; apertura del partido</text>
+    <text x="0" y="174" class="it" fill="#9ed0ff">goles ~ Poisson &#215; Dixon&#8211;Coles</text>
+    <text x="0" y="192" class="ds">distribuci&#243;n exacta del marcador</text>
+    <rect x="0" y="208" width="264" height="34" rx="8" fill="#13233f" stroke="#2d6ff0"/>
+    <text x="132" y="230" text-anchor="middle" class="it" fill="#cfe4ff">&#8594; 1X2 &#183; marcador &#183; over/under</text>
+  </g>
+
+  <!-- Card 4: MONTE CARLO -->
+  <g filter="url(#shadow)">
+    <rect x="946" y="180" width="318" height="330" rx="14" fill="#0f1830" stroke="#3a2c12"/>
+    <path d="M946,194 a14,14 0 0 1 14,-14 h290 a14,14 0 0 1 14,14 v24 h-318 z" fill="url(#gMC)"/>
+    <text x="1090" y="203" text-anchor="middle" class="ct" fill="#1a1205">MOTOR MONTE CARLO</text>
+  </g>
+  <g transform="translate(964,238)">
+    <text x="0" y="0" class="it"><tspan fill="#f7b733" font-weight="800">1</tspan>&#160; Fase de grupos &#8212; 72 partidos</text>
+    <text x="0" y="34" class="it"><tspan fill="#f7b733" font-weight="800">2</tspan>&#160; Tabla &#8594; clasifican 32</text>
+    <text x="16" y="50" class="ds">12 primeros + 12 segundos + 8 mejores 3.&#186;</text>
+    <text x="0" y="84" class="it"><tspan fill="#f7b733" font-weight="800">3</tspan>&#160; Eliminaci&#243;n R32 &#8594; Final</text>
+    <text x="16" y="100" class="ds">90&#39; &#8594; pr&#243;rroga &#8594; penales</text>
+    <text x="0" y="134" class="it"><tspan fill="#f7b733" font-weight="800">4</tspan>&#160; Agregaci&#243;n</text>
+    <text x="16" y="150" class="ds">campe&#243;n = <tspan fill="#fff">moda</tspan> &#183; probabilidades = <tspan fill="#fff">frecuencia</tspan></text>
+    <text x="16" y="165" class="ds">puntos de grupo = <tspan fill="#fff">media</tspan></text>
+  </g>
+  <!-- big x10000 badge -->
+  <g transform="translate(1104,420)">
+    <rect x="0" y="0" width="142" height="60" rx="12" fill="url(#gMC)" filter="url(#shadow)"/>
+    <text x="71" y="32" text-anchor="middle" fill="#1a1205" font-size="26" font-weight="800">&#215; 10.000</text>
+    <text x="71" y="50" text-anchor="middle" fill="#3a2c12" font-size="10.5" font-weight="700">SIMULACIONES / RONDA</text>
+  </g>
+  <text x="964" y="430" class="ds" fill="#f7b733">&#8635; se repite el torneo</text>
+  <text x="964" y="446" class="ds" fill="#f7b733">10.000 veces y se promedia</text>
+
+  <!-- Card 5: RESULTADOS -->
+  <g filter="url(#shadow)">
+    <rect x="1292" y="180" width="168" height="330" rx="14" fill="#0f1830" stroke="#16332a"/>
+    <path d="M1292,194 a14,14 0 0 1 14,-14 h140 a14,14 0 0 1 14,14 v24 h-168 z" fill="url(#gOut)"/>
+    <text x="1376" y="203" text-anchor="middle" class="ct" fill="#06251a">RESULTADOS</text>
+  </g>
+  <g transform="translate(1310,244)">
+    <text x="0" y="0" class="it">% avanza</text>
+    <text x="0" y="26" class="it">% cuartos</text>
+    <text x="0" y="52" class="it">% semifinal</text>
+    <text x="0" y="78" class="it">% final</text>
+    <text x="0" y="106" class="it" fill="#f4c430">&#127942; % t&#237;tulo</text>
+    <line x1="0" y1="122" x2="132" y2="122" stroke="#26314d"/>
+    <text x="0" y="146" class="ds">por partido:</text>
+    <text x="0" y="168" class="it" fill="#9bf0cf">1X2</text>
+    <text x="0" y="190" class="it" fill="#9bf0cf">marcador prob.</text>
+    <text x="0" y="212" class="it" fill="#9bf0cf">over / under</text>
+  </g>
+
+  <!-- connector arrows between cards -->
+  <g stroke="#7f8db0" stroke-width="2.4" fill="none">
+    <line x1="332" y1="345" x2="354" y2="345" marker-end="url(#arr)"/>
+    <line x1="592" y1="345" x2="614" y2="345" marker-end="url(#arr)"/>
+    <line x1="920" y1="345" x2="942" y2="345" marker-end="url(#arr)"/>
+    <line x1="1266" y1="345" x2="1288" y2="345" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- ===== FEEDBACK LOOP (Elo dinamico) ===== -->
+  <path d="M1376,512 C1376,556 1110,556 768,556 C600,556 540,556 540,540" fill="none" stroke="#f4c430" stroke-width="2.6" stroke-dasharray="7 5" marker-end="url(#arrG)"/>
+  <path d="M768,514 L768,556" stroke="#f4c430" stroke-width="2.6" stroke-dasharray="7 5"/>
+  <rect x="560" y="544" width="430" height="26" rx="13" fill="#1a1606" stroke="#5a4a16"/>
+  <text x="775" y="561" text-anchor="middle" fill="#f4c430" font-size="12" font-weight="700">&#8635; Elo din&#225;mico &#8212; cada resultado real reajusta el Elo (K adaptativo)</text>
+
+  <!-- ===== TIMELINE ===== -->
+  <text x="750" y="624" text-anchor="middle" fill="#fff" font-size="17" font-weight="800">PROCESO ACUMULATIVO &#160;&#183;&#160; 10.000 simulaciones en CADA ronda</text>
+  <text x="750" y="645" text-anchor="middle" class="ds">la predicci&#243;n se rehace tras cada jornada con el Elo ya actualizado &#8212; se vuelve m&#225;s fiable a medida que se juega</text>
+
+  <g transform="translate(0,672)" font-family="'Segoe UI',Arial">
+    <!-- Pre-torneo -->
+    <g transform="translate(56,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">PRE-TORNEO</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Elo a priori</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(231,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 1</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(406,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 2</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(581,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 3</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(756,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Octavos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(931,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Cuartos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(1106,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Semis</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(1281,0)"><rect width="150" height="74" rx="12" fill="#1c1606" stroke="url(#gold)"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#f4c430">T&#205;TULO</text><text x="75" y="46" text-anchor="middle" fill="#f4c430" font-size="15" font-weight="800">&#127942; Final</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+
+    <!-- forward arrows between rounds -->
+    <g stroke="#52608a" stroke-width="2.2" fill="none">
+      <line x1="206" y1="37" x2="229" y2="37" marker-end="url(#arr)"/>
+      <line x1="381" y1="37" x2="404" y2="37" marker-end="url(#arr)"/>
+      <line x1="556" y1="37" x2="579" y2="37" marker-end="url(#arr)"/>
+      <line x1="731" y1="37" x2="754" y2="37" marker-end="url(#arr)"/>
+      <line x1="906" y1="37" x2="929" y2="37" marker-end="url(#arr)"/>
+      <line x1="1081" y1="37" x2="1104" y2="37" marker-end="url(#arr)"/>
+      <line x1="1256" y1="37" x2="1279" y2="37" marker-end="url(#arr)"/>
+    </g>
+  </g>
+
+  <!-- accumulation banner with curved return arrow -->
+  <path d="M1356,752 C1356,800 760,806 80,806 L80,792" fill="none" stroke="#7b6cf0" stroke-width="2.6" stroke-dasharray="2 0" marker-end="url(#arr)"/>
+  <text x="724" y="828" text-anchor="middle" fill="#b9aef5" font-size="12.5" font-weight="700">resultados reales de la ronda &#8594; actualizan el Elo (K adaptativo) &#8594; la ronda siguiente se simula con informaci&#243;n nueva &#160;&#8635;&#160; <tspan fill="#f4c430">los pron&#243;sticos se afinan jornada a jornada</tspan></text>
+
+  <!-- ===== FOOTER ===== -->
+  <line x1="40" y1="858" x2="1460" y2="858" stroke="#1d2942"/>
+  <text x="40" y="884" class="ds" fill="#7e8aa6">Reproducible (semilla 2026) &#183; sin dependencias (Python stdlib) &#183; datos jun-2026: eloratings.net &#183; FIFA &#183; Transfermarkt &#183; Wikipedia</text>
+  <text x="1460" y="884" text-anchor="end" class="ds" fill="#7e8aa6">Elo + altitud + desgaste + presi&#243;n + estilo &#8594; Poisson &#215; Dixon&#8211;Coles &#8594; Monte Carlo</text>
+</svg>

@@ -1,0 +1,872 @@
+{
+  "torneo": "Copa Mundial de la FIFA 2026",
+  "formato": "48 equipos, 12 grupos de 4; avanzan 1os, 2os y 8 mejores 3os (32 a eliminacion directa)",
+  "grupos": {
+    "A": [
+      "Chequia",
+      "Sudafrica",
+      "Corea del Sur",
+      "Mexico"
+    ],
+    "B": [
+      "Suiza",
+      "Bosnia y Herzegovina",
+      "Catar",
+      "Canada"
+    ],
+    "C": [
+      "Escocia",
+      "Brasil",
+      "Marruecos",
+      "Haiti"
+    ],
+    "D": [
+      "Turquia",
+      "Paraguay",
+      "Australia",
+      "Estados Unidos"
+    ],
+    "E": [
+      "Alemania",
+      "Ecuador",
+      "Costa de Marfil",
+      "Curazao"
+    ],
+    "F": [
+      "Paises Bajos",
+      "Suecia",
+      "Tunez",
+      "Japon"
+    ],
+    "G": [
+      "Belgica",
+      "Egipto",
+      "Iran",
+      "Nueva Zelanda"
+    ],
+    "H": [
+      "Espana",
+      "Uruguay",
+      "Cabo Verde",
+      "Arabia Saudita"
+    ],
+    "I": [
+      "Francia",
+      "Noruega",
+      "Senegal",
+      "Irak"
+    ],
+    "J": [
+      "Austria",
+      "Argentina",
+      "Argelia",
+      "Jordania"
+    ],
+    "K": [
+      "Portugal",
+      "Colombia",
+      "RD Congo",
+      "Uzbekistan"
+    ],
+    "L": [
+      "Inglaterra",
+      "Croacia",
+      "Ghana",
+      "Panama"
+    ]
+  },
+  "fase_grupos": [
+    {
+      "id": "A1A",
+      "grupo": "A",
+      "jornada": 1,
+      "fecha": "2026-06-11",
+      "local": "Mexico",
+      "visitante": "Sudafrica",
+      "sede": "Ciudad de Mexico",
+      "pais_sede": "Mexico",
+      "altitud_m": 2240
+    },
+    {
+      "id": "A1B",
+      "grupo": "A",
+      "jornada": 1,
+      "fecha": "2026-06-11",
+      "local": "Corea del Sur",
+      "visitante": "Chequia",
+      "sede": "Guadalajara",
+      "pais_sede": "Mexico",
+      "altitud_m": 1566
+    },
+    {
+      "id": "A2A",
+      "grupo": "A",
+      "jornada": 2,
+      "fecha": "2026-06-18",
+      "local": "Chequia",
+      "visitante": "Sudafrica",
+      "sede": "Atlanta",
+      "pais_sede": "USA",
+      "altitud_m": 320
+    },
+    {
+      "id": "A2B",
+      "grupo": "A",
+      "jornada": 2,
+      "fecha": "2026-06-18",
+      "local": "Mexico",
+      "visitante": "Corea del Sur",
+      "sede": "Guadalajara",
+      "pais_sede": "Mexico",
+      "altitud_m": 1566
+    },
+    {
+      "id": "A3A",
+      "grupo": "A",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Chequia",
+      "visitante": "Mexico",
+      "sede": "Ciudad de Mexico",
+      "pais_sede": "Mexico",
+      "altitud_m": 2240
+    },
+    {
+      "id": "A3B",
+      "grupo": "A",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Sudafrica",
+      "visitante": "Corea del Sur",
+      "sede": "Monterrey",
+      "pais_sede": "Mexico",
+      "altitud_m": 427
+    },
+    {
+      "id": "B1A",
+      "grupo": "B",
+      "jornada": 1,
+      "fecha": "2026-06-12",
+      "local": "Canada",
+      "visitante": "Bosnia y Herzegovina",
+      "sede": "Toronto",
+      "pais_sede": "Canada",
+      "altitud_m": 76
+    },
+    {
+      "id": "B1B",
+      "grupo": "B",
+      "jornada": 1,
+      "fecha": "2026-06-13",
+      "local": "Catar",
+      "visitante": "Suiza",
+      "sede": "San Francisco",
+      "pais_sede": "USA",
+      "altitud_m": 4
+    },
+    {
+      "id": "B2A",
+      "grupo": "B",
+      "jornada": 2,
+      "fecha": "2026-06-18",
+      "local": "Suiza",
+      "visitante": "Bosnia y Herzegovina",
+      "sede": "Los Angeles",
+      "pais_sede": "USA",
+      "altitud_m": 40
+    },
+    {
+      "id": "B2B",
+      "grupo": "B",
+      "jornada": 2,
+      "fecha": "2026-06-18",
+      "local": "Canada",
+      "visitante": "Catar",
+      "sede": "Vancouver",
+      "pais_sede": "Canada",
+      "altitud_m": 3
+    },
+    {
+      "id": "B3A",
+      "grupo": "B",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Suiza",
+      "visitante": "Canada",
+      "sede": "Vancouver",
+      "pais_sede": "Canada",
+      "altitud_m": 3
+    },
+    {
+      "id": "B3B",
+      "grupo": "B",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Bosnia y Herzegovina",
+      "visitante": "Catar",
+      "sede": "Seattle",
+      "pais_sede": "USA",
+      "altitud_m": 50
+    },
+    {
+      "id": "C1A",
+      "grupo": "C",
+      "jornada": 1,
+      "fecha": "2026-06-13",
+      "local": "Brasil",
+      "visitante": "Marruecos",
+      "sede": "Nueva York",
+      "pais_sede": "USA",
+      "altitud_m": 5
+    },
+    {
+      "id": "C1B",
+      "grupo": "C",
+      "jornada": 1,
+      "fecha": "2026-06-13",
+      "local": "Haiti",
+      "visitante": "Escocia",
+      "sede": "Boston",
+      "pais_sede": "USA",
+      "altitud_m": 90
+    },
+    {
+      "id": "C2A",
+      "grupo": "C",
+      "jornada": 2,
+      "fecha": "2026-06-19",
+      "local": "Escocia",
+      "visitante": "Marruecos",
+      "sede": "Boston",
+      "pais_sede": "USA",
+      "altitud_m": 90
+    },
+    {
+      "id": "C2B",
+      "grupo": "C",
+      "jornada": 2,
+      "fecha": "2026-06-19",
+      "local": "Brasil",
+      "visitante": "Haiti",
+      "sede": "Filadelfia",
+      "pais_sede": "USA",
+      "altitud_m": 12
+    },
+    {
+      "id": "C3A",
+      "grupo": "C",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Escocia",
+      "visitante": "Brasil",
+      "sede": "Miami",
+      "pais_sede": "USA",
+      "altitud_m": 2
+    },
+    {
+      "id": "C3B",
+      "grupo": "C",
+      "jornada": 3,
+      "fecha": "2026-06-24",
+      "local": "Marruecos",
+      "visitante": "Haiti",
+      "sede": "Atlanta",
+      "pais_sede": "USA",
+      "altitud_m": 320
+    },
+    {
+      "id": "D1A",
+      "grupo": "D",
+      "jornada": 1,
+      "fecha": "2026-06-12",
+      "local": "Estados Unidos",
+      "visitante": "Paraguay",
+      "sede": "Los Angeles",
+      "pais_sede": "USA",
+      "altitud_m": 40
+    },
+    {
+      "id": "D1B",
+      "grupo": "D",
+      "jornada": 1,
+      "fecha": "2026-06-13",
+      "local": "Australia",
+      "visitante": "Turquia",
+      "sede": "Vancouver",
+      "pais_sede": "Canada",
+      "altitud_m": 3
+    },
+    {
+      "id": "D2A",
+      "grupo": "D",
+      "jornada": 2,
+      "fecha": "2026-06-19",
+      "local": "Estados Unidos",
+      "visitante": "Australia",
+      "sede": "Seattle",
+      "pais_sede": "USA",
+      "altitud_m": 50
+    },
+    {
+      "id": "D2B",
+      "grupo": "D",
+      "jornada": 2,
+      "fecha": "2026-06-19",
+      "local": "Turquia",
+      "visitante": "Paraguay",
+      "sede": "San Francisco",
+      "pais_sede": "USA",
+      "altitud_m": 4
+    },
+    {
+      "id": "D3A",
+      "grupo": "D",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Turquia",
+      "visitante": "Estados Unidos",
+      "sede": "Los Angeles",
+      "pais_sede": "USA",
+      "altitud_m": 40
+    },
+    {
+      "id": "D3B",
+      "grupo": "D",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Paraguay",
+      "visitante": "Australia",
+      "sede": "San Francisco",
+      "pais_sede": "USA",
+      "altitud_m": 4
+    },
+    {
+      "id": "E1A",
+      "grupo": "E",
+      "jornada": 1,
+      "fecha": "2026-06-14",
+      "local": "Alemania",
+      "visitante": "Curazao",
+      "sede": "Houston",
+      "pais_sede": "USA",
+      "altitud_m": 15
+    },
+    {
+      "id": "E1B",
+      "grupo": "E",
+      "jornada": 1,
+      "fecha": "2026-06-14",
+      "local": "Costa de Marfil",
+      "visitante": "Ecuador",
+      "sede": "Filadelfia",
+      "pais_sede": "USA",
+      "altitud_m": 12
+    },
+    {
+      "id": "E2A",
+      "grupo": "E",
+      "jornada": 2,
+      "fecha": "2026-06-20",
+      "local": "Alemania",
+      "visitante": "Costa de Marfil",
+      "sede": "Toronto",
+      "pais_sede": "Canada",
+      "altitud_m": 76
+    },
+    {
+      "id": "E2B",
+      "grupo": "E",
+      "jornada": 2,
+      "fecha": "2026-06-20",
+      "local": "Ecuador",
+      "visitante": "Curazao",
+      "sede": "Kansas City",
+      "pais_sede": "USA",
+      "altitud_m": 270
+    },
+    {
+      "id": "E3A",
+      "grupo": "E",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Ecuador",
+      "visitante": "Alemania",
+      "sede": "Nueva York",
+      "pais_sede": "USA",
+      "altitud_m": 5
+    },
+    {
+      "id": "E3B",
+      "grupo": "E",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Curazao",
+      "visitante": "Costa de Marfil",
+      "sede": "Filadelfia",
+      "pais_sede": "USA",
+      "altitud_m": 12
+    },
+    {
+      "id": "F1A",
+      "grupo": "F",
+      "jornada": 1,
+      "fecha": "2026-06-14",
+      "local": "Paises Bajos",
+      "visitante": "Japon",
+      "sede": "Dallas",
+      "pais_sede": "USA",
+      "altitud_m": 180
+    },
+    {
+      "id": "F1B",
+      "grupo": "F",
+      "jornada": 1,
+      "fecha": "2026-06-14",
+      "local": "Suecia",
+      "visitante": "Tunez",
+      "sede": "Monterrey",
+      "pais_sede": "Mexico",
+      "altitud_m": 427
+    },
+    {
+      "id": "F2A",
+      "grupo": "F",
+      "jornada": 2,
+      "fecha": "2026-06-20",
+      "local": "Paises Bajos",
+      "visitante": "Suecia",
+      "sede": "Houston",
+      "pais_sede": "USA",
+      "altitud_m": 15
+    },
+    {
+      "id": "F2B",
+      "grupo": "F",
+      "jornada": 2,
+      "fecha": "2026-06-20",
+      "local": "Tunez",
+      "visitante": "Japon",
+      "sede": "Monterrey",
+      "pais_sede": "Mexico",
+      "altitud_m": 427
+    },
+    {
+      "id": "F3A",
+      "grupo": "F",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Japon",
+      "visitante": "Suecia",
+      "sede": "Dallas",
+      "pais_sede": "USA",
+      "altitud_m": 180
+    },
+    {
+      "id": "F3B",
+      "grupo": "F",
+      "jornada": 3,
+      "fecha": "2026-06-25",
+      "local": "Tunez",
+      "visitante": "Paises Bajos",
+      "sede": "Kansas City",
+      "pais_sede": "USA",
+      "altitud_m": 270
+    },
+    {
+      "id": "G1A",
+      "grupo": "G",
+      "jornada": 1,
+      "fecha": "2026-06-15",
+      "local": "Belgica",
+      "visitante": "Egipto",
+      "sede": "Seattle",
+      "pais_sede": "USA",
+      "altitud_m": 50
+    },
+    {
+      "id": "G1B",
+      "grupo": "G",
+      "jornada": 1,
+      "fecha": "2026-06-15",
+      "local": "Iran",
+      "visitante": "Nueva Zelanda",
+      "sede": "Los Angeles",
+      "pais_sede": "USA",
+      "altitud_m": 40
+    },
+    {
+      "id": "G2A",
+      "grupo": "G",
+      "jornada": 2,
+      "fecha": "2026-06-21",
+      "local": "Belgica",
+      "visitante": "Iran",
+      "sede": "Los Angeles",
+      "pais_sede": "USA",
+      "altitud_m": 40
+    },
+    {
+      "id": "G2B",
+      "grupo": "G",
+      "jornada": 2,
+      "fecha": "2026-06-21",
+      "local": "Nueva Zelanda",
+      "visitante": "Egipto",
+      "sede": "Vancouver",
+      "pais_sede": "Canada",
+      "altitud_m": 3
+    },
+    {
+      "id": "G3A",
+      "grupo": "G",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Egipto",
+      "visitante": "Iran",
+      "sede": "Seattle",
+      "pais_sede": "USA",
+      "altitud_m": 50
+    },
+    {
+      "id": "G3B",
+      "grupo": "G",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Nueva Zelanda",
+      "visitante": "Belgica",
+      "sede": "Vancouver",
+      "pais_sede": "Canada",
+      "altitud_m": 3
+    },
+    {
+      "id": "H1A",
+      "grupo": "H",
+      "jornada": 1,
+      "fecha": "2026-06-15",
+      "local": "Espana",
+      "visitante": "Cabo Verde",
+      "sede": "Atlanta",
+      "pais_sede": "USA",
+      "altitud_m": 320
+    },
+    {
+      "id": "H1B",
+      "grupo": "H",
+      "jornada": 1,
+      "fecha": "2026-06-15",
+      "local": "Arabia Saudita",
+      "visitante": "Uruguay",
+      "sede": "Miami",
+      "pais_sede": "USA",
+      "altitud_m": 2
+    },
+    {
+      "id": "H2A",
+      "grupo": "H",
+      "jornada": 2,
+      "fecha": "2026-06-21",
+      "local": "Espana",
+      "visitante": "Arabia Saudita",
+      "sede": "Atlanta",
+      "pais_sede": "USA",
+      "altitud_m": 320
+    },
+    {
+      "id": "H2B",
+      "grupo": "H",
+      "jornada": 2,
+      "fecha": "2026-06-21",
+      "local": "Uruguay",
+      "visitante": "Cabo Verde",
+      "sede": "Miami",
+      "pais_sede": "USA",
+      "altitud_m": 2
+    },
+    {
+      "id": "H3A",
+      "grupo": "H",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Cabo Verde",
+      "visitante": "Arabia Saudita",
+      "sede": "Houston",
+      "pais_sede": "USA",
+      "altitud_m": 15
+    },
+    {
+      "id": "H3B",
+      "grupo": "H",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Uruguay",
+      "visitante": "Espana",
+      "sede": "Guadalajara",
+      "pais_sede": "Mexico",
+      "altitud_m": 1566
+    },
+    {
+      "id": "I1A",
+      "grupo": "I",
+      "jornada": 1,
+      "fecha": "2026-06-16",
+      "local": "Francia",
+      "visitante": "Senegal",
+      "sede": "Nueva York",
+      "pais_sede": "USA",
+      "altitud_m": 5
+    },
+    {
+      "id": "I1B",
+      "grupo": "I",
+      "jornada": 1,
+      "fecha": "2026-06-16",
+      "local": "Irak",
+      "visitante": "Noruega",
+      "sede": "Boston",
+      "pais_sede": "USA",
+      "altitud_m": 90
+    },
+    {
+      "id": "I2A",
+      "grupo": "I",
+      "jornada": 2,
+      "fecha": "2026-06-22",
+      "local": "Francia",
+      "visitante": "Irak",
+      "sede": "Filadelfia",
+      "pais_sede": "USA",
+      "altitud_m": 12
+    },
+    {
+      "id": "I2B",
+      "grupo": "I",
+      "jornada": 2,
+      "fecha": "2026-06-22",
+      "local": "Noruega",
+      "visitante": "Senegal",
+      "sede": "Nueva York",
+      "pais_sede": "USA",
+      "altitud_m": 5
+    },
+    {
+      "id": "I3A",
+      "grupo": "I",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Noruega",
+      "visitante": "Francia",
+      "sede": "Boston",
+      "pais_sede": "USA",
+      "altitud_m": 90
+    },
+    {
+      "id": "I3B",
+      "grupo": "I",
+      "jornada": 3,
+      "fecha": "2026-06-26",
+      "local": "Senegal",
+      "visitante": "Irak",
+      "sede": "Toronto",
+      "pais_sede": "Canada",
+      "altitud_m": 76
+    },
+    {
+      "id": "J1A",
+      "grupo": "J",
+      "jornada": 1,
+      "fecha": "2026-06-16",
+      "local": "Argentina",
+      "visitante": "Argelia",
+      "sede": "Kansas City",
+      "pais_sede": "USA",
+      "altitud_m": 270
+    },
+    {
+      "id": "J1B",
+      "grupo": "J",
+      "jornada": 1,
+      "fecha": "2026-06-16",
+      "local": "Austria",
+      "visitante": "Jordania",
+      "sede": "San Francisco",
+      "pais_sede": "USA",
+      "altitud_m": 4
+    },
+    {
+      "id": "J2A",
+      "grupo": "J",
+      "jornada": 2,
+      "fecha": "2026-06-22",
+      "local": "Argentina",
+      "visitante": "Austria",
+      "sede": "Dallas",
+      "pais_sede": "USA",
+      "altitud_m": 180
+    },
+    {
+      "id": "J2B",
+      "grupo": "J",
+      "jornada": 2,
+      "fecha": "2026-06-22",
+      "local": "Jordania",
+      "visitante": "Argelia",
+      "sede": "San Francisco",
+      "pais_sede": "USA",
+      "altitud_m": 4
+    },
+    {
+      "id": "J3A",
+      "grupo": "J",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "Argelia",
+      "visitante": "Austria",
+      "sede": "Kansas City",
+      "pais_sede": "USA",
+      "altitud_m": 270
+    },
+    {
+      "id": "J3B",
+      "grupo": "J",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "Jordania",
+      "visitante": "Argentina",
+      "sede": "Dallas",
+      "pais_sede": "USA",
+      "altitud_m": 180
+    },
+    {
+      "id": "K1A",
+      "grupo": "K",
+      "jornada": 1,
+      "fecha": "2026-06-17",
+      "local": "Portugal",
+      "visitante": "RD Congo",
+      "sede": "Houston",
+      "pais_sede": "USA",
+      "altitud_m": 15
+    },
+    {
+      "id": "K1B",
+      "grupo": "K",
+      "jornada": 1,
+      "fecha": "2026-06-17",
+      "local": "Uzbekistan",
+      "visitante": "Colombia",
+      "sede": "Ciudad de Mexico",
+      "pais_sede": "Mexico",
+      "altitud_m": 2240
+    },
+    {
+      "id": "K2A",
+      "grupo": "K",
+      "jornada": 2,
+      "fecha": "2026-06-23",
+      "local": "Portugal",
+      "visitante": "Uzbekistan",
+      "sede": "Houston",
+      "pais_sede": "USA",
+      "altitud_m": 15
+    },
+    {
+      "id": "K2B",
+      "grupo": "K",
+      "jornada": 2,
+      "fecha": "2026-06-23",
+      "local": "Colombia",
+      "visitante": "RD Congo",
+      "sede": "Guadalajara",
+      "pais_sede": "Mexico",
+      "altitud_m": 1566
+    },
+    {
+      "id": "K3A",
+      "grupo": "K",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "Colombia",
+      "visitante": "Portugal",
+      "sede": "Miami",
+      "pais_sede": "USA",
+      "altitud_m": 2
+    },
+    {
+      "id": "K3B",
+      "grupo": "K",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "RD Congo",
+      "visitante": "Uzbekistan",
+      "sede": "Atlanta",
+      "pais_sede": "USA",
+      "altitud_m": 320
+    },
+    {
+      "id": "L1A",
+      "grupo": "L",
+      "jornada": 1,
+      "fecha": "2026-06-17",
+      "local": "Inglaterra",
+      "visitante": "Croacia",
+      "sede": "Dallas",
+      "pais_sede": "USA",
+      "altitud_m": 180
+    },
+    {
+      "id": "L1B",
+      "grupo": "L",
+      "jornada": 1,
+      "fecha": "2026-06-17",
+      "local": "Ghana",
+      "visitante": "Panama",
+      "sede": "Toronto",
+      "pais_sede": "Canada",
+      "altitud_m": 76
+    },
+    {
+      "id": "L2A",
+      "grupo": "L",
+      "jornada": 2,
+      "fecha": "2026-06-23",
+      "local": "Inglaterra",
+      "visitante": "Ghana",
+      "sede": "Boston",
+      "pais_sede": "USA",
+      "altitud_m": 90
+    },
+    {
+      "id": "L2B",
+      "grupo": "L",
+      "jornada": 2,
+      "fecha": "2026-06-23",
+      "local": "Panama",
+      "visitante": "Croacia",
+      "sede": "Toronto",
+      "pais_sede": "Canada",
+      "altitud_m": 76
+    },
+    {
+      "id": "L3A",
+      "grupo": "L",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "Panama",
+      "visitante": "Inglaterra",
+      "sede": "Nueva York",
+      "pais_sede": "USA",
+      "altitud_m": 5
+    },
+    {
+      "id": "L3B",
+      "grupo": "L",
+      "jornada": 3,
+      "fecha": "2026-06-27",
+      "local": "Croacia",
+      "visitante": "Ghana",
+      "sede": "Filadelfia",
+      "pais_sede": "USA",
+      "altitud_m": 12
+    }
+  ]
+}

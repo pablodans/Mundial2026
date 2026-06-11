@@ -1,0 +1,21 @@
+{
+  "_meta": "Sedes oficiales del Mundial 2026 (16). altitud_m = altitud sobre el nivel del mar en metros (aprox). La altitud alimenta el factor de altura del modelo.",
+  "sedes": {
+    "Ciudad de Mexico":   {"pais": "Mexico", "estadio": "Estadio Azteca",        "altitud_m": 2240},
+    "Guadalajara":        {"pais": "Mexico", "estadio": "Estadio Akron",         "altitud_m": 1566},
+    "Monterrey":          {"pais": "Mexico", "estadio": "Estadio BBVA",          "altitud_m": 427},
+    "Atlanta":            {"pais": "USA",    "estadio": "Mercedes-Benz Stadium", "altitud_m": 320},
+    "Boston":             {"pais": "USA",    "estadio": "Gillette Stadium",      "altitud_m": 90},
+    "Dallas":             {"pais": "USA",    "estadio": "AT&T Stadium",          "altitud_m": 180},
+    "Houston":            {"pais": "USA",    "estadio": "NRG Stadium",           "altitud_m": 15},
+    "Kansas City":        {"pais": "USA",    "estadio": "Arrowhead Stadium",     "altitud_m": 270},
+    "Los Angeles":        {"pais": "USA",    "estadio": "SoFi Stadium",          "altitud_m": 40},
+    "Miami":              {"pais": "USA",    "estadio": "Hard Rock Stadium",     "altitud_m": 2},
+    "Nueva York":         {"pais": "USA",    "estadio": "MetLife Stadium",       "altitud_m": 5},
+    "Filadelfia":         {"pais": "USA",    "estadio": "Lincoln Financial Field","altitud_m": 12},
+    "San Francisco":      {"pais": "USA",    "estadio": "Levi's Stadium",        "altitud_m": 4},
+    "Seattle":            {"pais": "USA",    "estadio": "Lumen Field",           "altitud_m": 50},
+    "Toronto":            {"pais": "Canada", "estadio": "BMO Field",             "altitud_m": 76},
+    "Vancouver":          {"pais": "Canada", "estadio": "BC Place",              "altitud_m": 3}
+  }
+}

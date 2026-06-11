@@ -1,0 +1,6 @@
+{
+  "_meta": "Resultados ya jugados. Conforme avance el Mundial se rellena 'fase_grupos' (clave = id del partido del fixture, p.ej. A1A) y el modelo CONDICIONA las simulaciones a lo ocurrido en vez de resimularlo. 'bracket_r32' (lista de 32 paises en orden de cruce) fija el cuadro oficial cuando se conozca; si esta vacio, el cuadro se sortea. 'eliminatorias' fija resultados de rondas finales. Deja todo vacio para una prediccion 100% a priori.",
+  "fase_grupos": {},
+  "bracket_r32": [],
+  "eliminatorias": {}
+}

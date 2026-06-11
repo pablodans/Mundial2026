@@ -1,0 +1,10 @@
+{
+  "_meta": "Elo (World Football Elo Ratings, eloratings.net) de cada seleccion JUSTO ANTES del inicio de cada Mundial. Usado por scripts/calibrar.py para backtestear el modelo Poisson contra los marcadores reales de los cruces eliminatorios (data/historico_mundiales.json) y estimar por maxima verosimilitud el coeficiente Elo->goles (de donde sale ELO_DIV).",
+  "elo_pre_mundial": {
+    "2006": {"Alemania": 1895, "Suecia": 1859, "Argentina": 1922, "Mexico": 1838, "Inglaterra": 1972, "Ecuador": 1700, "Portugal": 1915, "Paises Bajos": 1994, "Italia": 1943, "Australia": 1798, "Suiza": 1800, "Ucrania": 1790, "Brasil": 2034, "Ghana": 1616, "Espana": 1964, "Francia": 1971},
+    "2010": {"Uruguay": 1845, "Corea del Sur": 1765, "Estados Unidos": 1785, "Ghana": 1687, "Alemania": 1957, "Inglaterra": 2001, "Argentina": 1921, "Mexico": 1898, "Paises Bajos": 2043, "Eslovaquia": 1670, "Brasil": 2109, "Chile": 1886, "Paraguay": 1764, "Japon": 1678, "Espana": 2111, "Portugal": 1876},
+    "2014": {"Brasil": 2138, "Chile": 1919, "Colombia": 1922, "Uruguay": 1918, "Paises Bajos": 1985, "Mexico": 1814, "Costa Rica": 1711, "Grecia": 1823, "Francia": 1896, "Nigeria": 1727, "Alemania": 2073, "Argelia": 1626, "Argentina": 2018, "Suiza": 1854, "Belgica": 1851, "Estados Unidos": 1857},
+    "2018": {"Francia": 1986, "Argentina": 1984, "Uruguay": 1893, "Portugal": 1968, "Espana": 2043, "Rusia": 1677, "Croacia": 1853, "Dinamarca": 1854, "Brasil": 2141, "Mexico": 1849, "Belgica": 1935, "Japon": 1684, "Suecia": 1793, "Suiza": 1888, "Colombia": 1927, "Inglaterra": 1947},
+    "2022": {"Paises Bajos": 2040, "Estados Unidos": 1796, "Argentina": 2143, "Australia": 1720, "Francia": 2004, "Polonia": 1813, "Inglaterra": 1919, "Senegal": 1684, "Japon": 1788, "Croacia": 1926, "Brasil": 2169, "Corea del Sur": 1786, "Marruecos": 1764, "Espana": 2049, "Portugal": 2005, "Suiza": 1901}
+  }
+}
