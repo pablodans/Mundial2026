@@ -184,3 +184,17 @@ El % de cada caja es la probabilidad que da el modelo a ese equipo de ganar ese 
 > válida (la primera que satisface las elegibilidades), que puede no coincidir con la tabla
 > exacta (Anexo C) que aplicaría la FIFA en ese escenario concreto. El esqueleto de llaves y
 > las elegibilidades sí son las oficiales.
+
+## Licencia y descargo de responsabilidad
+
+Este proyecto se publica bajo la licencia **MIT** (ver [LICENSE](LICENSE)): cualquiera
+puede usarlo, copiarlo, modificarlo y distribuirlo libremente.
+
+> ⚠️ **Descargo de responsabilidad.** Este software es un ejercicio estadístico y se
+> ofrece **"tal cual", sin garantía de ningún tipo**. Las predicciones, probabilidades,
+> cuadros y resultados que genera son **estimaciones de un modelo**, no hechos ni
+> certezas, y **pueden ser erróneos**. El autor **no se responsabiliza** de ningún
+> efecto, decisión, resultado, pérdida o daño —económico o de cualquier otra índole—
+> derivado del uso de este algoritmo o de sus salidas. **Quien lo use lo hace bajo su
+> propia y exclusiva responsabilidad.** En particular, esto **no es** consejo de apuestas
+> ni asesoramiento financiero; apostar conlleva riesgo y es responsabilidad de cada uno.
