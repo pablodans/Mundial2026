@@ -44,7 +44,8 @@ elo_eff = elo_base
 ```
 
 Los goles de cada equipo son **Poisson** independientes con media
-`λ = GOAL_BASE · KO_FACTOR · (1 + apertura) · exp(±GAMMA · ΔElo_eff / ELO_DIV)`. El **Elo
+`λ = GOAL_BASE · factor_goles · (1 + apertura) · exp(±GAMMA · ΔElo_eff / ELO_DIV)`, donde
+`factor_goles = 1` en la fase de grupos y `= KO_FACTOR (<1)` en eliminatorias. El **Elo
 fija el favorito**; el **estilo** y la **presión** fijan el *carácter* del partido (la
 `apertura`: más/menos goles y varianza, sin cambiar quién gana). En eliminatorias
 `KO_FACTOR < 1` cierra los partidos (calibrado con el histórico). Eliminatorias:
@@ -178,3 +179,8 @@ python tools/render_bracket.py          # PNG del cuadro (requiere Pillow)
 El cuadro respeta el esqueleto **oficial** de la R32 (las llaves 1E–3ABCDF, etc.); los
 8 mejores terceros se asignan a sus huecos respetando los grupos elegibles de cada llave.
 El % de cada caja es la probabilidad que da el modelo a ese equipo de ganar ese cruce.
+
+> Nota: cuando varios terceros podrían encajar en varios huecos, se toma **una** asignación
+> válida (la primera que satisface las elegibilidades), que puede no coincidir con la tabla
+> exacta (Anexo C) que aplicaría la FIFA en ese escenario concreto. El esqueleto de llaves y
+> las elegibilidades sí son las oficiales.

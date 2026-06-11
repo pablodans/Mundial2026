@@ -110,5 +110,5 @@ has its 4 teams and 6 unique pairings before writing.
 Transfermarkt squad values, goalkeepers, play-styles, and World Cup history collected
 June 2026. Figures for teams outside the FIFA top-50 are estimated and flagged as such.
 Mexico City (2240 m) and Guadalajara (1566 m) are the venues that actually drive the
-altitude factor. `KO_FACTOR=0.85` was set from `calibrar.py` against the historical
+altitude factor. `KO_FACTOR=0.87` was set from `calibrar.py` against the historical
 knockout goal rate.

@@ -72,10 +72,18 @@ def main():
         equipos = [x.strip() for x in sys.argv[2].split(",") if x.strip()]
         if len(equipos) != 32:
             raise SystemExit(f"El bracket necesita 32 equipos (recibidos {len(equipos)})")
+        validos = set(datos.cargar_selecciones())
+        desconocidos = [e for e in equipos if e not in validos]
+        if desconocidos:
+            raise SystemExit(f"Equipo(s) desconocido(s): {', '.join(desconocidos)} "
+                             f"(usa los nombres exactos de selecciones.csv)")
         d["bracket_r32"] = equipos
         print("Bracket oficial de 32 fijado.")
     elif cmd == "elim":
         clave, ganador = sys.argv[2], sys.argv[3]
+        if ganador not in datos.cargar_selecciones():
+            raise SystemExit(f"Equipo desconocido: {ganador} "
+                             f"(usa el nombre exacto de selecciones.csv)")
         d["eliminatorias"][clave] = {"ganador": ganador}
         print(f"Registrado cruce {clave}: ganador {ganador}")
     else:

@@ -139,9 +139,11 @@ def tau_dixon_coles(i, j, la, lb, rho):
     if i == 0 and j == 0:
         return 1.0 - la * lb * rho
     if i == 0 and j == 1:
-        return 1.0 + la * rho
+        # con rho<0 esta celda decrece; se acota a 0 por si lambda excede 1/|rho|
+        # (no ocurre con los parametros actuales, pero evita probabilidades negativas).
+        return max(0.0, 1.0 + la * rho)
     if i == 1 and j == 0:
-        return 1.0 + lb * rho
+        return max(0.0, 1.0 + lb * rho)
     if i == 1 and j == 1:
         return 1.0 - rho
     return 1.0
