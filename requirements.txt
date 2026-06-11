@@ -1,3 +1,0 @@
-# El proyecto usa solo la libreria estandar de Python (3.10+). No hay dependencias.
-# Para ejecutar las pruebas con pytest (opcional):
-# pytest>=7.0

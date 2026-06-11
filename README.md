@@ -1,5 +1,7 @@
 # Predictor Monte Carlo — Mundial 2026
 
+![Arquitectura del predictor](docs/diagrama_arquitectura.png)
+
 Simulador probabilístico de la Copa Mundial de la FIFA 2026 (48 equipos, 12 grupos,
 sedes en México, EE.UU. y Canadá). Estima probabilidades de avanzar, llegar a cada
 ronda y ganar el título corriendo el torneo completo miles de veces.
@@ -9,9 +11,10 @@ El modelo parte de un **observable cuantitativo objetivo** (el Elo de
 **altitud**, **desgaste** y **presión**. Las predicciones se **recalculan
 condicionadas a los resultados reales** que se van cargando conforme avanza el Mundial.
 
-> 📊 **Diagrama de arquitectura**: [docs/diagrama_arquitectura.svg](docs/diagrama_arquitectura.svg)
-> (fuentes de datos → modelo → Monte Carlo, y el bucle acumulativo de 10.000 simulaciones
-> por ronda). Ábrelo en el navegador o en el *preview* de VS Code.
+> El diagrama de arriba (fuentes de datos → modelo → Monte Carlo, y el bucle acumulativo)
+> también está como vectorial en [docs/diagrama_arquitectura.svg](docs/diagrama_arquitectura.svg).
+> Las imágenes PNG se regeneran con `python tools/render_arquitectura.py` y
+> `python tools/render_bracket.py` (requieren Pillow; el modelo en sí no tiene dependencias).
 
 ## Uso rápido
 
@@ -52,9 +55,10 @@ puntos de grupo = **media**.
 
 ### Factores
 - **Altura**: las sedes mexicanas (CDMX 2240 m, Guadalajara 1566 m) penalizan a los
-  no adaptados; México, Ecuador, Colombia, Sudáfrica e Irán apenas la sufren. La
-  **asignación de sedes es real**: los 10 partidos de grupo confirmados en México llevan
-  su sede exacta (ver `scripts/construir_fixture.py`); el resto es de baja altitud.
+  no adaptados; México, Ecuador, Colombia, Sudáfrica e Irán apenas la sufren. El
+  **fixture es el calendario oficial**: los 72 partidos de grupos llevan su
+  emparejamiento, fecha y sede reales del calendario publicado el 6-dic-2025
+  (ver `scripts/construir_fixture.py`).
 - **Desgaste**: la penalización por fatiga es creciente, así que pesa más en cuartos,
   semis y final, y se agrava con prórrogas y poco descanso.
 - **Presión "ganar o nada"**: en la 3ª jornada de grupos un equipo con ≤3 puntos recibe
@@ -103,9 +107,11 @@ deja [data/resultados_reales.json](data/resultados_reales.json) vacío.
 data/      selecciones.csv · estilos.json · sedes.json · fixture_completo.json · jugadores.json
            historico_mundiales.json · elo_historico.json · resultados_reales.json
 src/mundial2026/   datos · modelo · fatiga · torneo · montecarlo · elo_dinamico · prediccion_partido
-scripts/   construir_fixture.py · run_prediccion.py · predecir_partido.py · actualizar_resultados.py · calibrar.py
+scripts/   construir_fixture.py · run_prediccion.py · predecir_partido.py · predecir_bracket.py
+           mc_jornada.py · actualizar_resultados.py · calibrar.py
+tools/     render_arquitectura.py · render_bracket.py · assets_lib.py   (PNGs del README; usan Pillow)
 tests/     test_modelo.py
-docs/      prediccion_resultados.md  (generado)
+docs/      prediccion_resultados.md · diagrama_arquitectura.(svg|png) · bracket_prediccion.png  (generados)
 ```
 
 ## Datos y fuentes
@@ -146,3 +152,29 @@ parejos, así que extrapolar a duelos muy desiguales de grupos tiene incertidumb
 prórroga), por eso se adopta un `DC_RHO=-0.10` moderado (rango de literatura). El resto de
 coeficientes (altitud, fatiga, presión, localía, estilo, K adaptativo) están en
 [src/mundial2026/modelo.py](src/mundial2026/modelo.py) y son ajustables.
+
+## Predicción completa del torneo (cuadro previsto)
+
+La predicción **completa** sale del Monte Carlo (`run_prediccion.py`): probabilidades de
+avanzar / llegar a cada ronda / ser campeón para las 48 selecciones. A partir de ahí,
+`predecir_bracket.py` arma el **camino más probable** desde la R32 hasta el título —el
+ganador previsto de cada cruce según el modelo— y lo dibuja:
+
+```bash
+python scripts/run_prediccion.py        # probabilidades completas (data/ + docs/)
+python scripts/predecir_bracket.py      # cuadro R32 -> campeón (data/prediccion_bracket.json)
+python tools/render_bracket.py          # PNG del cuadro (requiere Pillow)
+```
+
+![Cuadro previsto del Mundial 2026](docs/bracket_prediccion.png)
+
+> ⚠️ **Esta predicción cambia ronda a ronda.** El cuadro de arriba es la foto de **hoy**,
+> *antes de arrancar el Mundial* (predicción 100 % a priori). Cada vez que se cargan
+> resultados reales con `actualizar_resultados.py`, el Elo dinámico se reajusta (K
+> adaptativo), lo ya jugado se fija en vez de simularse, y tanto las probabilidades como
+> el cuadro previsto se **recalculan** — afinándose jornada a jornada. El campeón previsto,
+> los cruces y los porcentajes de hoy **no son** los que verás tras la fase de grupos.
+
+El cuadro respeta el esqueleto **oficial** de la R32 (las llaves 1E–3ABCDF, etc.); los
+8 mejores terceros se asignan a sus huecos respetando los grupos elegibles de cada llave.
+El % de cada caja es la probabilidad que da el modelo a ese equipo de ganar ese cruce.
