@@ -33,12 +33,12 @@
 
   <!-- ===== HEADER ===== -->
   <text x="750" y="56" text-anchor="middle" class="" fill="url(#gold)" font-size="36" font-weight="800" filter="url(#titleGlow)">PREDICTOR MONTE CARLO &#8212; MUNDIAL 2026</text>
-  <text x="750" y="86" text-anchor="middle" fill="#c5cee0" font-size="14.5">Elo observado &#8226; altitud &#183; desgaste &#183; presi&#243;n &#183; estilo &#8594; goles Poisson &#215; Dixon&#8211;Coles &#8594; <tspan fill="#f4c430" font-weight="700">10.000 simulaciones acumulativas por ronda</tspan></text>
+  <text x="750" y="86" text-anchor="middle" fill="#c5cee0" font-size="14.5">Elo observado &#8226; altitud &#183; desgaste &#183; presi&#243;n &#183; estilo &#8594; goles Poisson &#215; Dixon&#8211;Coles &#8594; <tspan fill="#f4c430" font-weight="700">80.000 simulaciones acumulativas por ronda</tspan></text>
 
   <!-- ===== KPI STRIP ===== -->
   <g font-family="'Segoe UI',Arial">
     <g transform="translate(70,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN">48</text><text x="60" y="22" class="kpiL">SELECCIONES</text><text x="60" y="38" class="kpiL">12 grupos &#183; 16 sedes</text></g>
-    <g transform="translate(410,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#f4c430">10K</text><text x="78" y="22" class="kpiL">SIMULACIONES</text><text x="78" y="38" class="kpiL">en CADA ronda de partidos</text></g>
+    <g transform="translate(410,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#f4c430">80K</text><text x="78" y="22" class="kpiL">SIMULACIONES</text><text x="78" y="38" class="kpiL">en CADA ronda de partidos</text></g>
     <g transform="translate(750,108)"><rect width="320" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#2ee6a8">5</text><text x="52" y="22" class="kpiL">MUNDIALES</text><text x="52" y="38" class="kpiL">calibraci&#243;n (80 cruces reales)</text></g>
     <g transform="translate(1090,108)"><rect width="340" height="48" rx="10" fill="#111b33" stroke="#26314d"/><text x="20" y="31" class="kpiN" fill="#7b6cf0">&#8635;</text><text x="56" y="22" class="kpiL">ACUMULATIVO</text><text x="56" y="38" class="kpiL">el Elo se reajusta con cada resultado</text></g>
   </g>
@@ -120,11 +120,11 @@
   <!-- big x10000 badge -->
   <g transform="translate(1104,420)">
     <rect x="0" y="0" width="142" height="60" rx="12" fill="url(#gMC)" filter="url(#shadow)"/>
-    <text x="71" y="32" text-anchor="middle" fill="#1a1205" font-size="26" font-weight="800">&#215; 10.000</text>
+    <text x="71" y="32" text-anchor="middle" fill="#1a1205" font-size="26" font-weight="800">&#215; 80.000</text>
     <text x="71" y="50" text-anchor="middle" fill="#3a2c12" font-size="10.5" font-weight="700">SIMULACIONES / RONDA</text>
   </g>
   <text x="964" y="430" class="ds" fill="#f7b733">&#8635; se repite el torneo</text>
-  <text x="964" y="446" class="ds" fill="#f7b733">10.000 veces y se promedia</text>
+  <text x="964" y="446" class="ds" fill="#f7b733">80.000 veces y se promedia</text>
 
   <!-- Card 5: RESULTADOS -->
   <g filter="url(#shadow)">
@@ -160,19 +160,19 @@
   <text x="775" y="561" text-anchor="middle" fill="#f4c430" font-size="12" font-weight="700">&#8635; Elo din&#225;mico &#8212; cada resultado real reajusta el Elo (K adaptativo)</text>
 
   <!-- ===== TIMELINE ===== -->
-  <text x="750" y="624" text-anchor="middle" fill="#fff" font-size="17" font-weight="800">PROCESO ACUMULATIVO &#160;&#183;&#160; 10.000 simulaciones en CADA ronda</text>
+  <text x="750" y="624" text-anchor="middle" fill="#fff" font-size="17" font-weight="800">PROCESO ACUMULATIVO &#160;&#183;&#160; 80.000 simulaciones en CADA ronda</text>
   <text x="750" y="645" text-anchor="middle" class="ds">la predicci&#243;n se rehace tras cada jornada con el Elo ya actualizado &#8212; se vuelve m&#225;s fiable a medida que se juega</text>
 
   <g transform="translate(0,672)" font-family="'Segoe UI',Arial">
     <!-- Pre-torneo -->
-    <g transform="translate(56,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">PRE-TORNEO</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Elo a priori</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(231,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 1</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(406,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 2</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(581,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 3</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(756,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Octavos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(931,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Cuartos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(1106,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Semis</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
-    <g transform="translate(1281,0)"><rect width="150" height="74" rx="12" fill="#1c1606" stroke="url(#gold)"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#f4c430">T&#205;TULO</text><text x="75" y="46" text-anchor="middle" fill="#f4c430" font-size="15" font-weight="800">&#127942; Final</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 10.000 sims</text></g>
+    <g transform="translate(56,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">PRE-TORNEO</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Elo a priori</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(231,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 1</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(406,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 2</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(581,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#2b3858"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#8ea0c4">RONDA</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Jornada 3</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(756,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Octavos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(931,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Cuartos</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(1106,0)"><rect width="150" height="74" rx="12" fill="#101a31" stroke="#3a3318"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#d9b75a">ELIMINACI&#211;N</text><text x="75" y="48" text-anchor="middle" fill="#fff" font-size="15" font-weight="800">Semis</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
+    <g transform="translate(1281,0)"><rect width="150" height="74" rx="12" fill="#1c1606" stroke="url(#gold)"/><text x="75" y="22" text-anchor="middle" class="kpiL" fill="#f4c430">T&#205;TULO</text><text x="75" y="46" text-anchor="middle" fill="#f4c430" font-size="15" font-weight="800">&#127942; Final</text><text x="75" y="64" text-anchor="middle" class="ds">&#127922; 80.000 sims</text></g>
 
     <!-- forward arrows between rounds -->
     <g stroke="#52608a" stroke-width="2.2" fill="none">

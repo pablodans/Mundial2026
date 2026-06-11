@@ -12,6 +12,8 @@ _FONTS = {
     "reg": "C:/Windows/Fonts/segoeui.ttf",
     "sb": "C:/Windows/Fonts/seguisb.ttf",
     "bold": "C:/Windows/Fonts/segoeuib.ttf",
+    "black": "C:/Windows/Fonts/seguibl.ttf",
+    "light": "C:/Windows/Fonts/seguili.ttf",
 }
 
 
@@ -68,3 +70,26 @@ def texto_ajustado(draw, cx, cy, text, kind, size, fill, max_w, anchor="mm", min
 
 def linea(draw, pts, fill, width=2):
     draw.line([(px * S, py * S) for px, py in pts], fill=fill, width=max(1, int(width * S)))
+
+
+def envolver(draw, text, kind, size, max_w):
+    """Parte `text` en líneas que caben en max_w al tamaño dado. Devuelve lista de líneas."""
+    f = font(kind, size)
+    palabras = text.split()
+    lineas, actual = [], ""
+    for p in palabras:
+        prueba = (actual + " " + p).strip()
+        w, _ = _ancho(draw, prueba, f)
+        if w <= max_w or not actual:
+            actual = prueba
+        else:
+            lineas.append(actual)
+            actual = p
+    if actual:
+        lineas.append(actual)
+    return lineas
+
+
+def alto_texto(text, size, factor=1.0):
+    """Alto aproximado de una línea de texto al tamaño dado."""
+    return size * 1.32 * factor

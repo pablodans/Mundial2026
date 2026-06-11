@@ -20,8 +20,8 @@ condicionadas a los resultados reales** que se van cargando conforme avanza el M
 
 ```bash
 # (Windows) el alias de la Store interfiere con "python"; usa la ruta del intérprete o py
-python scripts/run_prediccion.py                 # 10.000 simulaciones, semilla 2026
-python scripts/run_prediccion.py --sims 50000    # más simulaciones = más estable
+python scripts/run_prediccion.py                 # 10.000 simulaciones (rápido), semilla 2026
+python scripts/run_prediccion.py --sims 80000    # la predicción publicada del repo (más estable)
 python tests/test_modelo.py                       # pruebas (también con pytest)
 ```
 
@@ -157,14 +157,15 @@ coeficientes (altitud, fatiga, presión, localía, estilo, K adaptativo) están 
 ## Predicción completa del torneo (cuadro previsto)
 
 La predicción **completa** sale del Monte Carlo (`run_prediccion.py`): probabilidades de
-avanzar / llegar a cada ronda / ser campeón para las 48 selecciones. A partir de ahí,
+avanzar / llegar a cada ronda / ser campeón para las 48 selecciones. La predicción
+publicada aquí se obtuvo simulando el torneo completo **80.000 veces**. A partir de ahí,
 `predecir_bracket.py` arma el **camino más probable** desde la R32 hasta el título —el
 ganador previsto de cada cruce según el modelo— y lo dibuja:
 
 ```bash
-python scripts/run_prediccion.py        # probabilidades completas (data/ + docs/)
-python scripts/predecir_bracket.py      # cuadro R32 -> campeón (data/prediccion_bracket.json)
-python tools/render_bracket.py          # PNG del cuadro (requiere Pillow)
+python scripts/run_prediccion.py --sims 80000   # probabilidades completas (data/ + docs/)
+python scripts/predecir_bracket.py              # cuadro R32 -> campeón (data/prediccion_bracket.json)
+python tools/render_bracket.py                  # PNG del cuadro (requiere Pillow)
 ```
 
 ![Cuadro previsto del Mundial 2026](docs/bracket_prediccion.png)

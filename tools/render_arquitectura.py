@@ -50,12 +50,12 @@ def main():
     A.texto(d, W / 2, 38, "PREDICTOR MONTE CARLO — MUNDIAL 2026", A.font("bold", 31), TITULO, anchor="mm")
     A.texto(d, W / 2, 66,
             "Elo observado · altitud · desgaste · presión · estilo  →  goles Poisson × Dixon–Coles  →  "
-            "10.000 simulaciones acumulativas por ronda",
+            "80.000 simulaciones acumulativas por ronda",
             A.font("reg", 13.5), SUB, anchor="mm")
 
     # ---- KPI strip ----
     kpis = [("48", "SELECCIONES", "12 grupos · 16 sedes", LAV),
-            ("10K", "SIMULACIONES", "en cada ronda de partidos", PEACH),
+            ("80K", "SIMULACIONES", "en cada ronda de partidos", PEACH),
             ("5", "MUNDIALES", "calibración (80 cruces reales)", GRN),
             ("↻", "ACUMULATIVO", "el Elo se reajusta con cada resultado", LAV)]
     kx, kw, kgap = 40, 343, 12
@@ -139,7 +139,7 @@ def main():
         yy += 48
     # badge x10.000
     A.rrect(d, cx, cy + 250, 150, 56, 12, fill=PEACH, outline=(228, 188, 120), width=1.6)
-    A.texto(d, cx + 75, cy + 270, "× 10.000", A.font("bold", 24), (120, 80, 20), anchor="mm")
+    A.texto(d, cx + 75, cy + 270, "× 80.000", A.font("bold", 24), (120, 80, 20), anchor="mm")
     A.texto(d, cx + 75, cy + 292, "SIMULACIONES / RONDA", A.font("sb", 9.5), (150, 110, 50), anchor="mm")
     A.texto(d, cx + 170, cy + 268, "se repite el", A.font("reg", 10.5), (190, 140, 70), anchor="lm")
     A.texto(d, cx + 170, cy + 283, "torneo y se", A.font("reg", 10.5), (190, 140, 70), anchor="lm")
@@ -174,7 +174,7 @@ def main():
 
     # ---- timeline ----
     ty = 590
-    A.texto(d, W / 2, ty, "PROCESO ACUMULATIVO · 10.000 simulaciones en CADA ronda",
+    A.texto(d, W / 2, ty, "PROCESO ACUMULATIVO · 80.000 simulaciones en CADA ronda",
             A.font("bold", 16), TITULO, anchor="mm")
     A.texto(d, W / 2, ty + 20,
             "la predicción se rehace tras cada jornada con el Elo ya actualizado — se vuelve más fiable a medida que se juega",
@@ -197,7 +197,7 @@ def main():
         nom_col = GOLD_T if es_titulo else TITULO
         A.texto(d, x + bw / 2, by + 18, lab, A.font("sb", 10.5), lab_col, anchor="mm")
         A.texto(d, x + bw / 2, by + 42, nom, A.font("bold", 14.5), nom_col, anchor="mm")
-        A.texto(d, x + bw / 2, by + 61, "10.000 sims", A.font("reg", 10), SUB, anchor="mm")
+        A.texto(d, x + bw / 2, by + 61, "80.000 sims", A.font("reg", 10), SUB, anchor="mm")
         if i < len(etapas) - 1:
             ax = x + bw
             A.linea(d, [(ax, by + bh / 2), (ax + bgap - 2, by + bh / 2)], ARROW, 2)
