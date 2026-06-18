@@ -294,7 +294,8 @@
         "posicion": "POR",
         "club": "Fenerbahce",
         "valor_meur": 12,
-        "edad": 31
+        "edad": 31,
+        "j1": "7 atajadas ante Inglaterra; evito una derrota mas amplia (4-2)."
       }
     ],
     "Suiza": [
@@ -664,7 +665,8 @@
         "posicion": "POR",
         "club": "Liverpool",
         "valor_meur": 20,
-        "edad": 33
+        "edad": 33,
+        "j1": "Doble atajada decisiva en el descuento para el 1-1 con Marruecos."
       }
     ],
     "Uruguay": [
@@ -849,7 +851,8 @@
         "posicion": "POR",
         "club": "Al-Hilal",
         "valor_meur": 12,
-        "edad": 35
+        "edad": 35,
+        "j1": "4 atajadas clave en el 1-1 ante Brasil."
       }
     ],
     "Senegal": [
@@ -886,7 +889,8 @@
         "posicion": "POR",
         "club": "Al-Ahli",
         "valor_meur": 7,
-        "edad": 34
+        "edad": 34,
+        "j1": "5 atajadas en la derrota 1-3 con Francia; lo mas rescatable."
       }
     ],
     "Egipto": [
@@ -1108,7 +1112,8 @@
         "posicion": "POR",
         "club": "AVS",
         "valor_meur": 0.5,
-        "edad": 40
+        "edad": 40,
+        "j1": "Figura vs Espana (0-0): 7 atajadas, atajo los 7 remates a puerta; arco en cero a los 40 anos."
       }
     ],
     "Ghana": [
@@ -1330,7 +1335,8 @@
         "posicion": "POR",
         "club": "Al-Nassr",
         "valor_meur": 4,
-        "edad": 25
+        "edad": 25,
+        "j1": "CORRECCION J1: ataj0 Mohammed Al-Owais (figura, 9 atajadas, la cifra mas alta de la ronda) en el 1-1 con Uruguay."
       }
     ],
     "Uzbekistan": [
@@ -1478,7 +1484,8 @@
         "posicion": "POR",
         "club": "Al-Sadd",
         "valor_meur": 3,
-        "edad": 28
+        "edad": 28,
+        "j1": "CORRECCION J1: atajo Mahmoud Abunada (varias atajadas clave) en el 1-1 ante Suiza, que remato 26 veces."
       }
     ],
     "Australia": [
@@ -1515,7 +1522,8 @@
         "posicion": "POR",
         "club": "Lens",
         "valor_meur": 1.5,
-        "edad": 34
+        "edad": 34,
+        "j1": "CORRECCION J1: atajo Patrick Beach (debut, 8 atajadas, figura) en el 2-0 a Turquia con 28% de posesion."
       }
     ],
     "Mexico": [
@@ -1777,5 +1785,200 @@
         "edad": 32
       }
     ]
+  },
+  "destacados_jornada1": {
+    "_meta": "Figura del partido (MOTM) y arquero destacado de cada partido de la 1a ronda. Descriptivo (no entra al modelo). null = no confirmado.",
+    "A1A": {
+      "figura": {
+        "nombre": "Julian Quinones",
+        "equipo": "Mexico"
+      },
+      "arquero": null
+    },
+    "A1B": {
+      "figura": {
+        "nombre": "Hwang In-beom",
+        "equipo": "Corea del Sur"
+      },
+      "arquero": null
+    },
+    "B1A": {
+      "figura": null,
+      "arquero": null
+    },
+    "B1B": {
+      "figura": null,
+      "arquero": {
+        "nombre": "Mahmoud Abunada",
+        "equipo": "Catar",
+        "atajadas": null,
+        "nota": "Sostuvo el 1-1 ante 26 remates de Suiza (3.24 xG); primer punto mundialista de Catar."
+      }
+    },
+    "C1A": {
+      "figura": null,
+      "arquero": {
+        "nombre": "Yassine Bounou",
+        "equipo": "Marruecos",
+        "atajadas": 4,
+        "nota": "4 atajadas para el 1-1 ante Brasil; Alisson tambien salvo a Brasil en el descuento."
+      }
+    },
+    "C1B": {
+      "figura": {
+        "nombre": "John McGinn",
+        "equipo": "Escocia"
+      },
+      "arquero": null
+    },
+    "D1A": {
+      "figura": {
+        "nombre": "Folarin Balogun",
+        "equipo": "Estados Unidos"
+      },
+      "arquero": null
+    },
+    "D1B": {
+      "figura": {
+        "nombre": "Patrick Beach",
+        "equipo": "Australia"
+      },
+      "arquero": {
+        "nombre": "Patrick Beach",
+        "equipo": "Australia",
+        "atajadas": 8,
+        "nota": "UPSET: 8 atajadas en su debut; Australia gano 2-0 con 28% de posesion y 30-9 en contra en remates."
+      }
+    },
+    "E1A": {
+      "figura": {
+        "nombre": "Kai Havertz",
+        "equipo": "Alemania"
+      },
+      "arquero": null
+    },
+    "E1B": {
+      "figura": {
+        "nombre": "Amad Diallo",
+        "equipo": "Costa de Marfil"
+      },
+      "arquero": null
+    },
+    "F1A": {
+      "figura": null,
+      "arquero": null
+    },
+    "F1B": {
+      "figura": {
+        "nombre": "Yasin Ayari",
+        "equipo": "Suecia"
+      },
+      "arquero": null
+    },
+    "G1A": {
+      "figura": null,
+      "arquero": null
+    },
+    "G1B": {
+      "figura": null,
+      "arquero": null
+    },
+    "H1A": {
+      "figura": {
+        "nombre": "Vozinha",
+        "equipo": "Cabo Verde"
+      },
+      "arquero": {
+        "nombre": "Vozinha",
+        "equipo": "Cabo Verde",
+        "atajadas": 7,
+        "nota": "Figura. Atajo los 7 tiros a puerta de Espana (27 remates, 2.6 xG); arco en cero a los 40."
+      }
+    },
+    "H1B": {
+      "figura": {
+        "nombre": "Mohammed Al-Owais",
+        "equipo": "Arabia Saudita"
+      },
+      "arquero": {
+        "nombre": "Mohammed Al-Owais",
+        "equipo": "Arabia Saudita",
+        "atajadas": 9,
+        "nota": "Figura. 9 atajadas (la mas alta de la ronda) ante 28 remates de Uruguay para el 1-1."
+      }
+    },
+    "I1A": {
+      "figura": {
+        "nombre": "Kylian Mbappe",
+        "equipo": "Francia"
+      },
+      "arquero": {
+        "nombre": "Edouard Mendy",
+        "equipo": "Senegal",
+        "atajadas": 5,
+        "nota": "5 atajadas en la derrota 1-3 con Francia."
+      }
+    },
+    "I1B": {
+      "figura": {
+        "nombre": "Erling Haaland",
+        "equipo": "Noruega"
+      },
+      "arquero": null
+    },
+    "J1A": {
+      "figura": {
+        "nombre": "Lionel Messi",
+        "equipo": "Argentina"
+      },
+      "arquero": null
+    },
+    "J1B": {
+      "figura": {
+        "nombre": "Romano Schmid",
+        "equipo": "Austria"
+      },
+      "arquero": null
+    },
+    "K1A": {
+      "figura": null,
+      "arquero": {
+        "nombre": "Lionel Mpasi",
+        "equipo": "RD Congo",
+        "atajadas": null,
+        "nota": "RD Congo le saco un punto al favorito Portugal (1-1); destacado mas por posicionamiento que por volumen de atajadas (no confirmado)."
+      }
+    },
+    "K1B": {
+      "figura": {
+        "nombre": "Luis Diaz",
+        "equipo": "Colombia"
+      },
+      "arquero": null
+    },
+    "L1A": {
+      "figura": {
+        "nombre": "Harry Kane",
+        "equipo": "Inglaterra"
+      },
+      "arquero": {
+        "nombre": "Dominik Livakovic",
+        "equipo": "Croacia",
+        "atajadas": 7,
+        "nota": "7 atajadas; evito una derrota mas amplia que el 4-2."
+      }
+    },
+    "L1B": {
+      "figura": {
+        "nombre": "Antoine Semenyo",
+        "equipo": "Ghana"
+      },
+      "arquero": {
+        "nombre": "Benjamin Asare",
+        "equipo": "Ghana",
+        "atajadas": 3,
+        "nota": "Entro por lesion de Ati-Zigi y mantuvo el arco en cero (1-0 a Panama)."
+      }
+    }
   }
 }
