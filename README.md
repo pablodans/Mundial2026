@@ -186,6 +186,47 @@ El % de cada caja es la probabilidad que da el modelo a ese equipo de ganar ese 
 > exacta (Anexo C) que aplicaría la FIFA en ese escenario concreto. El esqueleto de llaves y
 > las elegibilidades sí son las oficiales.
 
+## Bitácora — corazonada de la jornada 2
+
+> Anotado el **18-jun-2026**, antes de jugarse la jornada 2. **Esto NO es la salida del
+> modelo** (las probabilidades frías están en [docs/prediccion_resultados.md](docs/prediccion_resultados.md)
+> y el top-3 de marcadores sale de `predecir_partido.py`). Es un *pick* **subjetivo**: de los
+> 3 marcadores más probables de cada partido elijo **uno** (★), guiado por lo que se vio de
+> verdad en la ronda 1 — quién remató mucho sin convertir, qué defensas hicieron agua y qué
+> arqueros están en racha. Cuando se juegue la jornada comparamos: probabilidad fría vs corazonada.
+
+| Partido | Top-3 (★ = pick) | Por qué, según la J1 |
+|---|---|---|
+| Chequia–Sudáfrica | 1-1 · **★2-1** · 2-0 | Chequia filtró 2 con Corea; Sudáfrica no marcó pero esto es a todo o nada |
+| México–Corea del Sur | **★2-1** · 1-1 · 2-0 | México sólido y en altura; Corea ya demostró que hace goles |
+| Suiza–Bosnia | **★2-0** · 1-1 · 2-1 | Suiza tiró 26 veces sin premio; ante Bosnia por fin convierte |
+| Canadá–Catar | **★2-0** · 3-0 · 2-1 | Abunada no salva dos veces seguidas; Canadá de local |
+| Escocia–Marruecos | 1-1 · 2-1 · **★1-2** | Escocia ganó siendo superada 20-3; Marruecos jugó mejor que Brasil |
+| Brasil–Haití | **★3-0** · 2-0 · 4-0 | Brasil viene picado del 1-1; descarga contra el más débil |
+| EE.UU.–Australia | 1-1 · **★2-1** · 1-2 | EE.UU. fue un avión (4-1); a Australia se le acaba la suerte del arquero |
+| Turquía–Paraguay | 1-1 · 1-2 · **★2-1** | Turquía mereció ganarle a Australia (30 remates); Paraguay hizo agua |
+| Alemania–Costa de Marfil | **★2-0** · 3-0 · 2-1 | Alemania a otro nivel, pero Marfil defiende mejor que Curazao |
+| Ecuador–Curazao | **★3-0** · 2-0 · 4-0 | Ecuador dolido por perder; Curazao ya encajó 7 |
+| Países Bajos–Suecia | 1-1 · **★2-1** · 2-0 | Naranja filtró 2 con Japón; Suecia (5 goles) te marca seguro |
+| Túnez–Japón | 0-2 · **★0-3** · 0-4 | Japón brilló ante Países Bajos; a Túnez ya le hicieron 5 |
+| Bélgica–Irán | 1-1 · **★2-1** · 1-0 | Bélgica fue floja, pero su jerarquía termina pesando; Irán igual marca |
+| Nueva Zelanda–Egipto | **★1-1** · 1-0 · 2-1 | Los dos empataron y compiten; choque parejo de medianos |
+| España–Arabia Saudita | 3-0 · **★2-0** · 4-0 | España gana sí o sí, pero Al-Owais (9 atajadas) le frena la goleada |
+| Uruguay–Cabo Verde | 2-0 · **★1-1** · 2-1 | La corazonada del torneo: Uruguay sigue sin puntería y Vozinha vuelve a tapar todo |
+| Francia–Irak | **★3-0** · 2-0 · 4-0 | Francia firme (3-1) contra un Irak que encajó 4 |
+| Noruega–Senegal | **★2-1** · 2-0 · 1-1 | Haaland enchufado; Senegal tiene con qué descontar |
+| Argentina–Austria | 2-0 · **★2-1** · 1-1 | Argentina manda, pero Austria (3 goles en J1) le hace uno |
+| Jordania–Argelia | **★1-1** · 2-1 · 1-0 | Argelia fue inofensiva con Argentina; reacciona y reparten |
+| Portugal–Uzbekistán | 2-0 · 1-1 · **★2-1** | Portugal gana pero sigue despilfarrando (Ronaldo falló 2 claras) |
+| Colombia–RD Congo | 3-0 · 4-0 · **★2-0** | Colombia clínica, pero RD Congo le aguantó a Portugal: no será goleada |
+| Inglaterra–Ghana | **★3-0** · 2-0 · 4-0 | Inglaterra hizo 4; Ghana ya dejó el arco en cero, pero acá no alcanza |
+| Panamá–Croacia | **★0-2** · 1-1 · 0-1 | Panamá no marcó en J1; Modrić y Kovačić alcanzan |
+
+**Las tres que más me laten (más allá de la probabilidad):**
+1. **Uruguay 1-1 Cabo Verde** — si Vozinha repite lo de España, Uruguay (28 remates y 1 gol ante Arabia) se vuelve a frustrar. El batacazo emocional de la ronda.
+2. **Escocia 1-2 Marruecos** — Escocia ganó "robando"; Marruecos jugó de igual a igual con Brasil. Me late que se da vuelta el favoritismo del modelo.
+3. **España 2-0 Arabia** — gana España, pero con Al-Owais en racha no hay goleada.
+
 ## Licencia y descargo de responsabilidad
 
 Este proyecto se publica bajo la licencia **MIT** (ver [LICENSE](LICENSE)): cualquiera
