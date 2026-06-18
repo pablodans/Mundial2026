@@ -1,6 +1,31 @@
 {
   "_meta": "Resultados ya jugados. Conforme avance el Mundial se rellena 'fase_grupos' (clave = id del partido del fixture, p.ej. A1A) y el modelo CONDICIONA las simulaciones a lo ocurrido en vez de resimularlo. 'bracket_r32' (lista de 32 paises en orden de cruce) fija el cuadro oficial cuando se conozca; si esta vacio, el cuadro se sortea. 'eliminatorias' fija resultados de rondas finales. Deja todo vacio para una prediccion 100% a priori.",
-  "fase_grupos": {},
+  "fase_grupos": {
+    "A1A": {"local_goles": 2, "visitante_goles": 0},
+    "A1B": {"local_goles": 2, "visitante_goles": 1},
+    "B1A": {"local_goles": 1, "visitante_goles": 1},
+    "B1B": {"local_goles": 1, "visitante_goles": 1},
+    "C1A": {"local_goles": 1, "visitante_goles": 1},
+    "C1B": {"local_goles": 0, "visitante_goles": 1},
+    "D1A": {"local_goles": 4, "visitante_goles": 1},
+    "D1B": {"local_goles": 2, "visitante_goles": 0},
+    "E1A": {"local_goles": 7, "visitante_goles": 1},
+    "E1B": {"local_goles": 1, "visitante_goles": 0},
+    "F1A": {"local_goles": 2, "visitante_goles": 2},
+    "F1B": {"local_goles": 5, "visitante_goles": 1},
+    "G1A": {"local_goles": 1, "visitante_goles": 1},
+    "G1B": {"local_goles": 2, "visitante_goles": 2},
+    "H1A": {"local_goles": 0, "visitante_goles": 0},
+    "H1B": {"local_goles": 1, "visitante_goles": 1},
+    "I1A": {"local_goles": 3, "visitante_goles": 1},
+    "I1B": {"local_goles": 1, "visitante_goles": 4},
+    "J1A": {"local_goles": 3, "visitante_goles": 0},
+    "J1B": {"local_goles": 3, "visitante_goles": 1},
+    "K1A": {"local_goles": 1, "visitante_goles": 1},
+    "K1B": {"local_goles": 1, "visitante_goles": 3},
+    "L1A": {"local_goles": 4, "visitante_goles": 2},
+    "L1B": {"local_goles": 1, "visitante_goles": 0}
+  },
   "bracket_r32": [],
   "eliminatorias": {}
 }
