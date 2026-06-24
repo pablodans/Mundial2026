@@ -227,6 +227,45 @@ El % de cada caja es la probabilidad que da el modelo a ese equipo de ganar ese 
 2. **Escocia 1-2 Marruecos** — Escocia ganó "robando"; Marruecos jugó de igual a igual con Brasil. Me late que se da vuelta el favoritismo del modelo.
 3. **España 2-0 Arabia** — gana España, pero con Al-Owais en racha no hay goleada.
 
+## Bitácora — corazonada de la jornada 3
+
+> Anotado el **24-jun-2026**, con 48/72 partidos jugados y antes de la jornada 3.
+> Igual que antes: el **top-3 sale del modelo** ([docs/prediccion_resultados.md](docs/prediccion_resultados.md)),
+> pero la **★ es corazonada subjetiva** mirando cómo vienen los equipos en J1+J2 (quién ya está
+> clasificado y rota, quién juega a matar o morir, quién no hace un gol).
+
+| Gr | Partido | Top-3 (★ = pick) | Por qué (J1+J2) |
+|----|---------|------------------|-----------------|
+| A | Chequia–México | **★0-2** · 0-3 · 1-2 | México 6 pts y juega en el Azteca; Chequia ya casi afuera |
+| A | Sudáfrica–Corea del Sur | 0-2 · **★1-2** · 1-1 | Corea pelea la clasificación; SA descuenta pero pierde |
+| B | Suiza–Canadá | **★1-1** · 2-1 · 1-2 | Decisor del 1º entre dos ya clasificados (4 pts c/u) |
+| B | Bosnia–Catar | 1-1 · **★2-1** · 2-0 | Ambos eliminados; Bosnia con más con qué |
+| C | Escocia–Brasil | 1-1 · **★1-2** · 0-2 | Brasil gana y asegura 1º; Escocia descuenta peleando |
+| C | Marruecos–Haití | **★2-0** · 2-1 · 1-1 | Marruecos firme rumbo a octavos; Haití eliminado |
+| D | Turquía–EE.UU. | **★1-1** · 1-2 · 0-2 | EE.UU. ya clasificado rota; Turquía (afuera) sin presión |
+| D | Paraguay–Australia | 1-1 · 0-0 · **★1-0** | Mata o muere por el 2º; me late Paraguay tras voltear a Turquía |
+| E | Ecuador–Alemania | **★1-1** · 1-2 · 0-1 | Ecuador (0 goles en 2) marca en su finalísima; Alemania ya arriba |
+| E | Curazao–Costa de Marfil | 1-1 · **★1-2** · 0-2 | Marfil necesita ganar para clasificar |
+| F | Japón–Suecia | 1-1 · **★2-1** · 2-0 | Japón enchufado; Suecia marca |
+| F | Túnez–Países Bajos | **★0-3** · 0-2 · 0-4 | Naranja goleadora (5-1); Túnez eliminado y goleado |
+| G | Egipto–Irán | **★1-1** · 0-1 · 0-2 | Egipto (4 pts) cuida el empate que lo mete; Irán empuja |
+| G | Nueva Zelanda–Bélgica | **★0-2** · 1-2 · 1-1 | Bélgica (2 empates flojos) obligada, despierta |
+| H | Cabo Verde–Arabia Saudita | 1-1 · 2-1 · **★1-0** | El cuento: Vozinha deja el arco en cero y CV se clasifica |
+| H | Uruguay–España | 0-2 · **★1-2** · 0-3 | Uruguay marca por orgullo, pero España (1ª, rota) tiene demasiado |
+| I | Noruega–Francia | 1-1 · **★1-2** · 0-2 | Decisor del 1º; Francia pega arriba, Haaland descuenta |
+| I | Senegal–Irak | 1-1 · **★2-1** · 1-0 | Ambos eliminados; Senegal saca orgullo y calidad |
+| J | Argelia–Austria | **★1-2** · 1-1 · 0-2 | Austria se queda el 2º puesto |
+| J | Jordania–Argentina | 0-3 · **★0-2** · 0-4 | Argentina (1ª) rota a Messi y gana sobria; Jordania afuera |
+| K | Colombia–Portugal | 1-1 · **★2-1** · 1-2 | Decisor del 1º: Colombia más clínica que un Portugal derrochón |
+| K | RD Congo–Uzbekistán | **★1-1** · 1-2 · 0-2 | Trámite entre dos sin chances |
+| L | Panamá–Inglaterra | **★0-2** · 0-3 · 0-1 | Inglaterra rota y gana; Panamá eliminado sin marcar |
+| L | Croacia–Ghana | 2-0 · **★2-1** · 1-0 | Croacia debe ganar para avanzar; Ghana (sólida atrás) descuenta |
+
+**Las tres que más me laten (más allá de la probabilidad):**
+1. **Cabo Verde 1-0 Arabia** — la fábula del torneo: con Vozinha en racha, Cabo Verde se mete en octavos en su debut mundialista.
+2. **Ecuador 1-1 Alemania** — Ecuador no marcó en dos partidos y se juega la vida; me late que justo ahí rompe el maleficio y le roba un punto a una Alemania ya clasificada.
+3. **Paraguay 1-0 Australia** — duelo a matar o morir por el 2º puesto; tras eliminar a Turquía, me late la garra guaraní en un partido feo y cerrado.
+
 ## Licencia y descargo de responsabilidad
 
 Este proyecto se publica bajo la licencia **MIT** (ver [LICENSE](LICENSE)): cualquiera
