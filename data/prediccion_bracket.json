@@ -3,49 +3,49 @@
     "descripcion": "Cuadro 'camino mas probable' R32->Final segun el modelo. Cambia conforme se cargan resultados reales.",
     "sims_por_cruce": 4000,
     "seed": 2026,
-    "partidos_reales_cargados": 24,
+    "partidos_reales_cargados": 48,
     "terceros_clasifican_grupos": [
+      "L",
+      "D",
+      "G",
       "F",
       "C",
-      "E",
-      "L",
+      "J",
       "B",
-      "G",
-      "H",
-      "K"
+      "H"
     ]
   },
   "clasificados_orden": [
     "Alemania",
     "Bosnia y Herzegovina",
     "Francia",
-    "Cabo Verde",
+    "Australia",
     "Corea del Sur",
-    "Suiza",
+    "Canada",
     "Paises Bajos",
-    "Escocia",
+    "Brasil",
     "Portugal",
     "Croacia",
     "Espana",
     "Austria",
     "Estados Unidos",
     "Suecia",
-    "Belgica",
-    "Ecuador",
-    "Brasil",
+    "Egipto",
+    "Argelia",
+    "Marruecos",
     "Japon",
     "Costa de Marfil",
     "Noruega",
     "Mexico",
-    "Marruecos",
+    "Escocia",
     "Inglaterra",
-    "Uzbekistan",
-    "Argentina",
     "Uruguay",
-    "Australia",
+    "Argentina",
+    "Cabo Verde",
+    "Paraguay",
+    "Belgica",
+    "Suiza",
     "Iran",
-    "Canada",
-    "Egipto",
     "Colombia",
     "Ghana"
   ],
@@ -55,97 +55,97 @@
         "a": "Alemania",
         "b": "Bosnia y Herzegovina",
         "ganador": "Alemania",
-        "p": 83.9
+        "p": 85.6
       },
       {
         "a": "Francia",
-        "b": "Cabo Verde",
+        "b": "Australia",
         "ganador": "Francia",
-        "p": 92.6
+        "p": 80.8
       },
       {
         "a": "Corea del Sur",
-        "b": "Suiza",
-        "ganador": "Suiza",
-        "p": 60.6
+        "b": "Canada",
+        "ganador": "Canada",
+        "p": 51.4
       },
       {
         "a": "Paises Bajos",
-        "b": "Escocia",
-        "ganador": "Paises Bajos",
-        "p": 68.3
+        "b": "Brasil",
+        "ganador": "Brasil",
+        "p": 52.1
       },
       {
         "a": "Portugal",
         "b": "Croacia",
         "ganador": "Portugal",
-        "p": 59.1
+        "p": 59.4
       },
       {
         "a": "Espana",
         "b": "Austria",
         "ganador": "Espana",
-        "p": 81.8
+        "p": 84.2
       },
       {
         "a": "Estados Unidos",
         "b": "Suecia",
         "ganador": "Estados Unidos",
-        "p": 53.4
+        "p": 61.4
       },
       {
-        "a": "Belgica",
-        "b": "Ecuador",
-        "ganador": "Ecuador",
-        "p": 53.2
+        "a": "Egipto",
+        "b": "Argelia",
+        "ganador": "Egipto",
+        "p": 51.8
       },
       {
-        "a": "Brasil",
+        "a": "Marruecos",
         "b": "Japon",
-        "ganador": "Brasil",
-        "p": 57.3
+        "ganador": "Japon",
+        "p": 63.2
       },
       {
         "a": "Costa de Marfil",
         "b": "Noruega",
         "ganador": "Noruega",
-        "p": 85.7
+        "p": 86.8
       },
       {
         "a": "Mexico",
-        "b": "Marruecos",
+        "b": "Escocia",
         "ganador": "Mexico",
-        "p": 62.4
+        "p": 65.4
       },
       {
         "a": "Inglaterra",
-        "b": "Uzbekistan",
+        "b": "Uruguay",
         "ganador": "Inglaterra",
-        "p": 85.8
+        "p": 71.4
       },
       {
         "a": "Argentina",
-        "b": "Uruguay",
+        "b": "Cabo Verde",
         "ganador": "Argentina",
-        "p": 76.2
+        "p": 94.3
       },
       {
-        "a": "Australia",
+        "a": "Paraguay",
+        "b": "Belgica",
+        "ganador": "Belgica",
+        "p": 56.2
+      },
+      {
+        "a": "Suiza",
         "b": "Iran",
-        "ganador": "Australia",
-        "p": 58.7
-      },
-      {
-        "a": "Canada",
-        "b": "Egipto",
-        "ganador": "Canada",
-        "p": 71.5
+        "ganador": "Suiza",
+        "p": 63.8
       },
       {
         "a": "Colombia",
         "b": "Ghana",
         "ganador": "Colombia",
-        "p": 92.0
+        "p": 90.7
       }
     ],
     "Octavos": [
@@ -153,75 +153,75 @@
         "a": "Alemania",
         "b": "Francia",
         "ganador": "Francia",
-        "p": 67.6
+        "p": 67.2
       },
       {
-        "a": "Suiza",
-        "b": "Paises Bajos",
-        "ganador": "Paises Bajos",
-        "p": 59.1
+        "a": "Canada",
+        "b": "Brasil",
+        "ganador": "Brasil",
+        "p": 72.4
       },
       {
         "a": "Portugal",
         "b": "Espana",
         "ganador": "Espana",
-        "p": 69.9
+        "p": 67.8
       },
       {
         "a": "Estados Unidos",
-        "b": "Ecuador",
-        "ganador": "Ecuador",
-        "p": 62.0
+        "b": "Egipto",
+        "ganador": "Estados Unidos",
+        "p": 72.9
       },
       {
-        "a": "Brasil",
+        "a": "Japon",
         "b": "Noruega",
-        "ganador": "Brasil",
-        "p": 54.0
+        "ganador": "Noruega",
+        "p": 53.1
       },
       {
         "a": "Mexico",
         "b": "Inglaterra",
         "ganador": "Inglaterra",
-        "p": 70.9
+        "p": 66.7
       },
       {
         "a": "Argentina",
-        "b": "Australia",
+        "b": "Belgica",
         "ganador": "Argentina",
-        "p": 80.2
+        "p": 80.0
       },
       {
-        "a": "Canada",
+        "a": "Suiza",
         "b": "Colombia",
         "ganador": "Colombia",
-        "p": 75.2
+        "p": 64.2
       }
     ],
     "Cuartos": [
       {
         "a": "Francia",
-        "b": "Paises Bajos",
+        "b": "Brasil",
         "ganador": "Francia",
-        "p": 64.8
+        "p": 61.4
       },
       {
         "a": "Espana",
-        "b": "Ecuador",
+        "b": "Estados Unidos",
         "ganador": "Espana",
-        "p": 77.8
+        "p": 82.4
       },
       {
-        "a": "Brasil",
+        "a": "Noruega",
         "b": "Inglaterra",
         "ganador": "Inglaterra",
-        "p": 59.4
+        "p": 60.5
       },
       {
         "a": "Argentina",
         "b": "Colombia",
         "ganador": "Argentina",
-        "p": 65.8
+        "p": 66.0
       }
     ],
     "Semifinal": [
@@ -229,13 +229,13 @@
         "a": "Francia",
         "b": "Espana",
         "ganador": "Espana",
-        "p": 57.5
+        "p": 57.0
       },
       {
         "a": "Inglaterra",
         "b": "Argentina",
         "ganador": "Argentina",
-        "p": 58.0
+        "p": 62.8
       }
     ],
     "Final": [
@@ -243,7 +243,7 @@
         "a": "Espana",
         "b": "Argentina",
         "ganador": "Espana",
-        "p": 52.4
+        "p": 50.5
       }
     ]
   },
